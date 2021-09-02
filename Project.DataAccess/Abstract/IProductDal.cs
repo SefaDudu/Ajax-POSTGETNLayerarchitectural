@@ -11,5 +11,6 @@ namespace Project.DataAccess.Abstract
 {
      public interface IProductDal:IEntityRepository<Product>
     {
+        List<Product> GetAllStore();
     }
 }

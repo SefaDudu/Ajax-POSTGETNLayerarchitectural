@@ -40,6 +40,11 @@ namespace Project.Busi.Concrete
             return _productDal.GetList();
         }
 
+        public List<Product> StoreProcedureList()
+        {
+            return _productDal.GetAllStore();
+        }
+
         public void update(Product products)
         {
             _productDal.Update(products);

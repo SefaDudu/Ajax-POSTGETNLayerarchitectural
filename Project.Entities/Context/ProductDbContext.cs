@@ -16,6 +16,13 @@ namespace Project.Entities.Context
         }
         public DbSet<Product> Products { get; set; }
         public DbSet<Comment> Comments { get; set; }
+        public DbSet<Logs> Logs { get; set; }
+
+        //Hazır Procedure oluşturma
+        //protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        //{
+        //    modelBuilder.Entity<Product>().MapToStoredProcedures();
+        //}
 
     }
 }

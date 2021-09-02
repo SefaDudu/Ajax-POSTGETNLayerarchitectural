@@ -1,4 +1,4 @@
-﻿const productItemTemplate = "<tr> <td>{{Id}}</td> <td>{{Name}}</td> <td><button class='btn btn-primary' onclick='helper.UpdateProductModalOpen(\"{{Id}}\",\"{{Name}}\", this)'>Güncelle</button><button class='btn btn-danger' onclick='helper.RemoveProduct(\"{{Id}}\",\"{{Name}}\", this)'>Sil</button><a href=\"{{Link}}\" class=\"btn btn-primary\">Görüntüle </a></td> </tr>";
+﻿const productItemTemplate = "<tr <td>{{Id}}</td> <td>{{Name}}</td> <td><button class='btn btn-primary' onclick='helper.UpdateProductModalOpen(\"{{Id}}\",\"{{Name}}\", this)'>Güncelle</button><button class='btn btn-danger' onclick='helper.RemoveProduct(\"{{Id}}\",\"{{Name}}\", this)'>Sil</button><a href=\"{{Link}}\" class=\"btn btn-primary\">Görüntüle </a></td> </tr>";
               
 $(() => {
 
@@ -16,7 +16,7 @@ const helper = {
 
             $(helper.Table).children("tbody").html("");
 
-            console.log(response);
+            //console.log(response);
 
             response.forEach(product => {
 

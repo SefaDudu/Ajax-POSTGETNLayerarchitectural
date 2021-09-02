@@ -15,6 +15,7 @@ namespace Project.Busi.Abstract
         void add(Product products);
         void delete(Product products);
         void update(Product products);
+        List<Product> StoreProcedureList();
     
     }
 }

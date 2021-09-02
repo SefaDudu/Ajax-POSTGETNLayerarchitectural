@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DataLayer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\dbDAL.1.0.4\lib\DataLayer.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -54,6 +57,7 @@
   <ItemGroup>
     <Compile Include="Abstract\IEntity.cs" />
     <Compile Include="Concrete\Comment.cs" />
+    <Compile Include="Concrete\Logs.cs" />
     <Compile Include="Concrete\Product.cs" />
     <Compile Include="Context\ProductDbContext.cs" />
     <Compile Include="Migrations\202108280713128_InitialCreate.cs" />
@@ -71,6 +75,30 @@
     <Compile Include="Migrations\202108281001590_V0003.cs" />
     <Compile Include="Migrations\202108281001590_V0003.Designer.cs">
       <DependentUpon>202108281001590_V0003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108310758288_Procedure001.cs" />
+    <Compile Include="Migrations\202108310758288_Procedure001.Designer.cs">
+      <DependentUpon>202108310758288_Procedure001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108310908136_Procedure002.cs" />
+    <Compile Include="Migrations\202108310908136_Procedure002.Designer.cs">
+      <DependentUpon>202108310908136_Procedure002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108311141070_deneme001.cs" />
+    <Compile Include="Migrations\202108311141070_deneme001.Designer.cs">
+      <DependentUpon>202108311141070_deneme001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108311155311_Deneme0033.cs" />
+    <Compile Include="Migrations\202108311155311_Deneme0033.Designer.cs">
+      <DependentUpon>202108311155311_Deneme0033.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108311156412_deneme0004.cs" />
+    <Compile Include="Migrations\202108311156412_deneme0004.Designer.cs">
+      <DependentUpon>202108311156412_deneme0004.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109011139115_ActionFilter001.cs" />
+    <Compile Include="Migrations\202109011139115_ActionFilter001.Designer.cs">
+      <DependentUpon>202109011139115_ActionFilter001.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -95,6 +123,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202108281001590_V0003.resx">
       <DependentUpon>202108281001590_V0003.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108310758288_Procedure001.resx">
+      <DependentUpon>202108310758288_Procedure001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108310908136_Procedure002.resx">
+      <DependentUpon>202108310908136_Procedure002.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108311141070_deneme001.resx">
+      <DependentUpon>202108311141070_deneme001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108311155311_Deneme0033.resx">
+      <DependentUpon>202108311155311_Deneme0033.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108311156412_deneme0004.resx">
+      <DependentUpon>202108311156412_deneme0004.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109011139115_ActionFilter001.resx">
+      <DependentUpon>202109011139115_ActionFilter001.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
