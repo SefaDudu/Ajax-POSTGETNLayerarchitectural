@@ -1,5 +1,5 @@
-﻿@using Project.Entities.Concrete
-@model List<Product>
+﻿
+@model Project.Entities.ProductListViewModel
 @{
     Layout = null;
 }
@@ -25,9 +25,10 @@
         <th>  NAME</th>
         </thead>
         <tbody>
-            @foreach (var x in Model)
+            @foreach (var x in Model.Products)
             {
-                <tr> <td>@x.ID</td>  <td>@x.ProductName</td>       </tr>
+            <tr>@x.ProductName</tr> 
+                
 
             }
 

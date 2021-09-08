@@ -15,7 +15,7 @@ namespace Project.Core.Filters
         public  void OnActionExecuted(ActionExecutedContext filterContext)
         {
             
-            db.Logs.Add(new Entities.Concrete.Logs()
+            db.ALogs.Add(new Entities.Concrete.ALogs()
             {
                 KullaniciAdi = "System",
 
@@ -31,7 +31,7 @@ namespace Project.Core.Filters
         public void OnActionExecuting(ActionExecutingContext filterContext)
         {
 
-            db.Logs.Add(new Entities.Concrete.Logs()
+            db.ALogs.Add(new Entities.Concrete.ALogs()
             {
                 KullaniciAdi = "System",
 

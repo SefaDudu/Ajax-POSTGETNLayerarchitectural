@@ -10,7 +10,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project.Busi.Concrete
+namespace Project.Business.Concrete
 {
     public class CommentsManager : ICommentsService
     {

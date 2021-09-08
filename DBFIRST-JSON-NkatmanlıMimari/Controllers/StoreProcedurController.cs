@@ -1,6 +1,9 @@
-﻿using Project.Busi.Concrete;
+﻿
+using Project.Busi.Abstract;
+using Project.Business.Concrete;
 using Project.Core.Filters;
 using Project.DataAccess.Concrete;
+using Project.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,18 +15,30 @@ namespace DBFIRST_JSON_NkatmanlıMimari.Controllers
     public class StoreProcedurController : Controller
     {
         // GET: StoreProcedur
-        ProductManager product;
-        public StoreProcedurController()
+        //ProductManager product;
+        //public StoreProcedurController()
+        //{
+        //    product = new ProductManager(new EfProductDal());
+        //}
+
+        IProductService _productService;
+        public StoreProcedurController(IProductService productService)
         {
-            product = new ProductManager(new EfProductDal());
+            _productService = productService;
         }
-       
+
+
+
         [HttpGet]
-        [ActFilter]
+        //[ActFilter] --> log almaya yarıyor.
         public ActionResult Index()
         {
-            var result = product.StoreProcedureList();
-            return View(result);
+            var model = new ProductListViewModel
+            {
+                Products = _productService.StoreProcedureList()
+            };
+            //var result = product.StoreProcedureList();
+            return View(model);
         }
     }
 }

@@ -8,20 +8,15 @@ using System.Threading.Tasks;
 
 namespace Project.Entities.Concrete
 {
-   public class Logs:IEntity
+    public class Logs:IEntity
     {
-        [Key , Required()]
+        [Key]
         public int Id { get; set; }
-        [Required()]
-        public DateTime Tarih { get; set; }
-        [Required()]
-        public string KullaniciAdi { get; set; }
-        [Required()]
-        public string ActionName { get; set; }
-        [Required()]
-        public string ControllerName { get; set; }
-        [Required()]
-        public string Bilgi { get; set; }
+        [MaxLength(4000)]
+        public string Detail { get; set; }
+        public DateTime Date { get; set; }
+        [MaxLength(50)]
+        public string Audit { get; set; }
 
     }
 }

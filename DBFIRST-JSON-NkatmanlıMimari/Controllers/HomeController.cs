@@ -1,4 +1,4 @@
-﻿using Project.Busi.Concrete;
+﻿using Project.Business.Concrete;
 using Project.DataAccess.Concrete;
 using Project.Entities.Concrete;
 using Project.Entities.ViewModel;
@@ -46,6 +46,7 @@ namespace DBFIRST_JSON_NkatmanlıMimari.Controllers
         }
 
         [HttpGet]
+
         public JsonResult GetProducts()
         {
             return Json(manger.GetList(), JsonRequestBehavior.AllowGet);
