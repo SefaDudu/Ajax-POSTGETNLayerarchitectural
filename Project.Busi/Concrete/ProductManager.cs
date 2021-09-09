@@ -46,13 +46,13 @@ namespace Project.Business.Concrete
         }
 
         //[CacheAspect()]
-        [LogAspect(typeof(DatabaseLogger))]
+        //[LogAspect(typeof(DatabaseLogger))]
         //[LogAspect(typeof(FileLogger))]
         public IList<Product> GetList()
         {
             return _productDal.GetList();
         }
-        [LogAspect(typeof(DatabaseLogger))]
+        //[LogAspect(typeof(DatabaseLogger))]
         public List<Product> StoreProcedureList()
         {
             return _productDal.GetAllStore();

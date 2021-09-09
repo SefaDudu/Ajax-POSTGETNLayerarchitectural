@@ -94,6 +94,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Aspetcs\PostSharp\CacheAspect\CacheAspect.cs" />
+    <Compile Include="Aspetcs\PostSharp\ExceptionAspect\ExceptionLogAspect.cs" />
     <Compile Include="Aspetcs\PostSharp\FluentValidationAspect.cs" />
     <Compile Include="Aspetcs\PostSharp\LogAspects\LogAspect.cs" />
     <Compile Include="CrossCuttingConcerns\Caching\ICacheManager.cs" />

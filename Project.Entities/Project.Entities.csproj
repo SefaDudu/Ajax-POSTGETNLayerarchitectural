@@ -114,6 +114,18 @@
     <Compile Include="Migrations\202109081215093_LogsImplement002.designer.cs">
       <DependentUpon>202109081215093_LogsImplement002.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202109090635491_Exception001.cs" />
+    <Compile Include="Migrations\202109090635491_Exception001.designer.cs">
+      <DependentUpon>202109090635491_Exception001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109090637128_Exception002.cs" />
+    <Compile Include="Migrations\202109090637128_Exception002.designer.cs">
+      <DependentUpon>202109090637128_Exception002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109090639247_Exception003.cs" />
+    <Compile Include="Migrations\202109090639247_Exception003.designer.cs">
+      <DependentUpon>202109090639247_Exception003.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\ProductDetailsVM.cs" />
@@ -165,6 +177,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202109081215093_LogsImplement002.resx">
       <DependentUpon>202109081215093_LogsImplement002.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109090635491_Exception001.resx">
+      <DependentUpon>202109090635491_Exception001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109090637128_Exception002.resx">
+      <DependentUpon>202109090637128_Exception002.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109090639247_Exception003.resx">
+      <DependentUpon>202109090639247_Exception003.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
